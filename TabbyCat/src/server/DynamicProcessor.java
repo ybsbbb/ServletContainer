@@ -47,7 +47,9 @@ public class DynamicProcessor {
 	        	}
 	        }
 		}else{
-	        servletName = ucMap.get(uri.substring(uri.lastIndexOf("/")));			
+	        servletName = ucMap.get(uri.substring(uri.lastIndexOf("/")));
+			HashMap<String,String> param = new HashMap<String, String>();
+			request.setParams(param);
 		}
         
         
